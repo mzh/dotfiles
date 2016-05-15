@@ -1,0 +1,23 @@
+[alias]
+  co = checkout
+  ci = commit
+  lg = log --decorate --graph --oneline
+  st = status
+[color]
+  ui = auto
+[core]
+  excludesfile = ~/.config/git/ignore
+[diff]
+  algorithm = histogram
+[merge]
+  conflictstyle = diff3
+  tool          = vimdiff
+[push]
+  default = simple
+[rebase]
+  autosquash = true
+[user]
+  email = mzh@users.noreply.github.com
+  name  = Michael Zhang
+[web]
+  browser = xdg-open

@@ -1,0 +1,4 @@
+! Caps Lock as Control
+clear Lock
+keysym Caps_Lock = Control_L
+add Control = Control_L

@@ -1,0 +1,19 @@
+$include /etc/inputrc
+
+# Options
+set bell-style none
+set colored-stats on
+set completion-ignore-case on
+set editing-mode vi
+set show-all-if-ambiguous on
+
+# Bindings
+$if mode=vi
+  set keymap vi-command
+  Control-n: next-history
+  Control-p: previous-history
+
+  set keymap vi-insert
+  Control-n: next-history
+  Control-p: previous-history
+$endif

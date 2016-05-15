@@ -1,0 +1,25 @@
+" Options
+let homedirectory  = '/home/mzh'
+let configpath     = '~/.cvimrc'
+set localconfig
+
+set noautofocus
+let barposition    = 'bottom'
+set cncpcompletion
+let hintcharacters = 'asdfghjkl;'
+set nohud
+let searchlimit    = 10
+let vimcommand     = 'urxvtc -e $EDITOR'
+
+" Mappings
+let mapleader = ' '
+
+map <Leader>f createScriptHint(incognitoHint)
+
+incognitoHint(link) -> {{
+  RUNTIME('openLinkWindow', {url: link.href, incognito: true});
+}}
+
+map <Leader>n :nohlsearch<CR>
+
+" vim: set syntax=vim:
