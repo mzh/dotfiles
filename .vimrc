@@ -33,7 +33,6 @@ silent! if plug#begin('~/.vim/bundle')
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --bin'}
   Plug 'junegunn/fzf.vim'
   nnoremap <Leader>f :Files<CR>
-  nnoremap <Leader>s :Snippets<CR>
 
   Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
   nnoremap <Leader>g :Goyo<CR>
@@ -67,6 +66,8 @@ silent! if plug#begin('~/.vim/bundle')
 
   " Snippets
   Plug 'SirVer/ultisnips'
+  let g:UltiSnipsListSnippets = '<S-Tab>'
+
   Plug 'honza/vim-snippets'
 
   " Language-specific
