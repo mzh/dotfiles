@@ -195,10 +195,10 @@ set t_Co=16
 " :grep
 if executable('ag')
   set grepprg=ag\ --vimgrep\ $*
+  set grepformat^=%f:%l:%c:%m
 else
   set grepprg=grep\ -Hnr\ --exclude='*~'\ --exclude='.*.sw?'\ --exclude=tags\ $*
 endif
-set grepformat=%f:%l:%c:%m,%f:%l:%m
 
 " }}}
 " Mappings {{{
