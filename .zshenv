@@ -6,7 +6,7 @@ fi
 export EDITOR
 export VISUAL=$EDITOR
 
-[ -d "$HOME/bin" ] && export PATH=$HOME/bin:$PATH
+[ -d "$HOME/bin" ] && export PATH=$PATH:$HOME/bin
 
 # less
 export PAGER=less
