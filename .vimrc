@@ -255,7 +255,9 @@ if has('autocmd')
     endfunction
 
     " neomake
-    autocmd! BufWritePost * Neomake
+    if has('nvim')
+      autocmd! BufWritePost * Neomake
+    endif
   endif
 
   augroup filetypes
