@@ -184,7 +184,7 @@ set showbreak=↪\
 if has('gui_running')
   set guicursor=a:block-Cursor,a:blinkon0
   if has('gui_gtk2')
-    set guifont=Monospace\ 10
+    set guifont=Monospace\ 12
   endif
   set guioptions=c
 endif

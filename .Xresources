@@ -7,10 +7,10 @@ URxvt.scrollstyle:     plain
 URxvt.transparent:     false
 
 ! Fonts
-URxvt.font:            xft:Monospace:size=10
-URxvt.boldFont:        xft:Monospace:bold:size=10
-URxvt.italicFont:      xft:Monospace:italic:size=10
-URxvt.boldItalicFont:  xft:Monospace:bold:italic:size=10
+URxvt.font:            xft:Monospace:size=12
+URxvt.boldFont:        xft:Monospace:bold:size=12
+URxvt.italicFont:      xft:Monospace:italic:size=12
+URxvt.boldItalicFont:  xft:Monospace:bold:italic:size=12
 
 ! Extensions
 URxvt.perl-ext-common: default,matcher
@@ -27,7 +27,7 @@ Xft.rgba:      rgb
 
 ! }}}
 ! rofi {{{
-rofi.font:            Monospace 10
+rofi.font:            Monospace 12
 rofi.fuzzy:           true
 rofi.disable-history: true
 rofi.padding:         0

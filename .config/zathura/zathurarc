@@ -1,7 +1,7 @@
 # Options {{{
 set adjust-open width
 set first-page-column 2
-set font "Monospace 10"
+set font "Monospace 12"
 set selection-clipboard clipboard
 
 # }}}
