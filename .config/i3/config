@@ -86,8 +86,8 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # }}}
 # Applications {{{
-bindsym $mod+Shift+Return exec urxvtc
-bindsym $mod+Return exec urxvtc -e sh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux"
+bindsym $mod+Return exec urxvtc
+bindsym $mod+Shift+Return exec urxvtc -e sh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux"
 
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="rofi -dmenu -p 'run:'"
 bindsym Control+Mod1+l exec --no-startup-id i3lock -c 000000
