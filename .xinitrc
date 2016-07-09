@@ -2,6 +2,7 @@
 
 [ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
 [ -f ~/.Xresources ] && xrdb -load ~/.Xresources
+xset r rate 500 30
 xsetroot -solid "#000000"
 urxvtd -q -o -f
 
