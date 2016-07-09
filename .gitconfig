@@ -7,8 +7,11 @@
   ui = auto
 [core]
   excludesfile = ~/.config/git/ignore
+  pager        = diff-highlight | less -x1,5
 [diff]
   algorithm = histogram
+[interactive]
+  diffFilter = diff-highlight
 [merge]
   conflictstyle = diff3
   tool          = vimdiff
