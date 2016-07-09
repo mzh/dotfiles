@@ -102,6 +102,7 @@ if [ -f $HOME/.fzf.zsh ]; then
   command -v ag > /dev/null 2>&1 && export FZF_DEFAULT_COMMAND='ag -g "" --hidden --ignore .git'
   export FZF_DEFAULT_OPTS='--multi --color=16 --inline-info --tiebreak=end'
   export FZF_CTRL_R_OPTS='--sort'
+  command -v tree > /dev/null 2>&1 && export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -n $LINES'"
 fi
 
 # }}}
