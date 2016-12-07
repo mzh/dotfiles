@@ -129,6 +129,9 @@ set hidden
 set history=1000
 set hlsearch
 set ignorecase
+if has('nvim') && exists('+inccommand')
+  set inccommand=nosplit
+endif
 set incsearch
 if has('langmap') && exists('+langnoremap')
   set langnoremap
