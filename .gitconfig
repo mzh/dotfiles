@@ -1,4 +1,5 @@
 [alias]
+  br = branch
   co = checkout
   ci = commit
   lg = log --decorate --graph --oneline
