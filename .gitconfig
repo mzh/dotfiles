@@ -1,0 +1,29 @@
+[alias]
+	br = branch
+	co = checkout
+	ci = commit
+	lg = log --decorate --graph --pretty=oneline
+	st = status
+[color]
+	ui = auto
+[column]
+	ui = auto,dense
+[core]
+	excludesfile = ~/.config/git/ignore
+	pager = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -x1,5
+[diff]
+	algorithm = histogram
+[interactive]
+	diffFilter = diff-highlight
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[pull]
+	ff = only
+[push]
+	default = simple
+[rebase]
+	autosquash = true
+[user]
+	email = mzh@users.noreply.github.com
+	name = Michael Zhang

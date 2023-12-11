@@ -1,0 +1,7 @@
+*~
+tags
+
+# Vim
+.*.sw?
+.netrwhist
+Session.vim

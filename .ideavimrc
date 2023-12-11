@@ -1,0 +1,32 @@
+" Plugins
+set surround
+
+" Options
+set clipboard=unnamed,unnamedplus
+set history=1000
+set hlsearch
+set ignorecase
+set incsearch
+set nrformats-=octal
+set number
+set relativenumber
+set scrolloff=2
+set showmode
+set smartcase
+
+" Mappings
+let mapleader = ' '
+
+nnoremap Y y$
+
+nnoremap <C-H> <C-W>h
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-L> <C-W>l
+
+inoremap <C-P> <C-O>:action HippieBackwardCompletion<CR>
+inoremap <C-N> <C-O>:action HippieCompletion<CR>
+
+nnoremap <Leader>a :action Annotate<CR>
+nnoremap <Leader>f :action FindUsages<CR>
+nnoremap <Leader>n :nohlsearch<CR>
